@@ -129,8 +129,9 @@ else
   ],
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 8,
+    "ecmaVersion": 2020,
     "ecmaFeatures": {
+      "jsx": true,
       "experimentalObjectRestSpread": true,
       "impliedStrict": true,
       "classes": true
@@ -138,15 +139,25 @@ else
   },
   "env": {
     "browser": true,
+    "es2020": true,
     "node": true,
     "jquery": true,
     "jest": true
   },
   "rules": {
-    "react/prop-types": 0,
-    "react-hooks/rules-of-hooks": "error",
     "no-debugger": 0,
     "no-alert": 0,
+    "no-await-in-loop": 0,
+    "no-return-assign": [
+      "error",
+      "except-parens"
+    ],
+    "no-restricted-syntax": [
+      2,
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
     "no-unused-vars": [
       1,
       {
@@ -244,7 +255,10 @@ else
           "invalidHref"
         ]
       }
-    ]
+    ],
+    "react/prop-types": 1,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "plugins": [
     "prettier",
