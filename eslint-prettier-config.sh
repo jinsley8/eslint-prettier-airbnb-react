@@ -125,6 +125,7 @@ else
     "airbnb",
     "prettier",
     "prettier/react",
+    "plugin:prettier/recommended",
     "plugin:jsx-a11y/recommended"
   ],
   "parser": "babel-eslint",
