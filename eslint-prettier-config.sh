@@ -149,7 +149,6 @@ else
     "no-debugger": 0,
     "no-alert": 0,
     "no-await-in-loop": 0,
-    "no-process-exit": "off",
     "no-return-assign": [
       "error",
       "except-parens"
