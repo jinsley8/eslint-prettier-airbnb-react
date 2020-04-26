@@ -149,6 +149,7 @@ else
     "no-debugger": 0,
     "no-alert": 0,
     "no-await-in-loop": 0,
+    "no-process-exit": "off",
     "no-return-assign": [
       "error",
       "except-parens"
@@ -198,6 +199,7 @@ else
     "max-len": 0,
     "import/extensions": 0,
     "no-underscore-dangle": 0,
+    "object-shorthand": "off",
     "consistent-return": 0,
     "react/display-name": 1,
     "react/no-array-index-key": 0,
